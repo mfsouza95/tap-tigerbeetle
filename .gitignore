@@ -131,3 +131,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#tigerbeetle executable
+tigerbeetle.exe
+tigerbeetle.zip
+0_0.tigerbeetle

@@ -25,10 +25,10 @@ class TigerbeetleStream(RESTStream):
         response: requests.Response,
         previous_token: Any | None,
     ) -> Any | None:
-        # TODO: Implement pagination
-        next_page_token = None
-
-        return next_page_token
+        next_page_token = len(response)
+        if next_page_token == 50:
+            return response[-1].timestamp
+        return None
 
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
         for record in response:
@@ -49,8 +49,9 @@ class TigerbeetleStream(RESTStream):
         Returns:
             A dictionary of URL query parameters.
         """
-        # TODO: Implement pagination
         params: dict = {}
+        if next_page_token is not None:
+            params["timestamp_min"] = next_page_token
         return params
 
     def request_records(self, context: dict | None) -> Iterable[dict]:
