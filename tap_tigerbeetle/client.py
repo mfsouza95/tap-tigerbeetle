@@ -6,7 +6,6 @@ from dataclasses import asdict
 from typing import Any, Iterable
 
 import requests
-from hotglue_singer_sdk.helpers.jsonpath import extract_jsonpath
 from hotglue_singer_sdk.streams import RESTStream
 from typing_extensions import override
 import tigerbeetle as tb
