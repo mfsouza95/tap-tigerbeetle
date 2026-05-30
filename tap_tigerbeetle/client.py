@@ -26,7 +26,7 @@ class TigerbeetleStream(RESTStream):
     ) -> Any | None:
         next_page_token = len(response)
         if next_page_token == 50:
-            return response[-1].timestamp
+            return response[-1].timestamp + 1
         return None
 
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
