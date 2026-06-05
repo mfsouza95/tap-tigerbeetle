@@ -16,23 +16,65 @@
           },
           "debits_pending": {
             "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "credits_pending": {
-            "type": [
-              "integer",
+              "string",
               "null"
             ]
           },
           "debits_posted": {
             "type": [
-              "integer",
+              "string",
+              "null"
+            ]
+          },
+          "credits_pending": {
+            "type": [
+              "string",
               "null"
             ]
           },
           "credits_posted": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "user_data_128": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "user_data_64": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "user_data_32": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "ledger": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "code": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "flags": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "timestamp": {
             "type": [
               "integer",
               "null"
@@ -64,15 +106,6 @@
         {
           "breadcrumb": [
             "properties",
-            "credits_pending"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
             "debits_posted"
           ],
           "metadata": {
@@ -82,7 +115,79 @@
         {
           "breadcrumb": [
             "properties",
+            "credits_pending"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
             "credits_posted"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "user_data_128"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "user_data_64"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "user_data_32"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ledger"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "code"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "flags"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "timestamp"
           ],
           "metadata": {
             "inclusion": "available"

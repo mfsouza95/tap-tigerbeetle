@@ -1,0 +1,7 @@
+Verification: TigerBeetle account state after seeding, queried via lookup_accounts [1, 2, 3]
+
+id=1    ledger=1 code=1 debits_posted=500    credits_posted=100    debits_pending=0      credits_pending=0      user_data_128=1001 user_data_64=2001 user_data_32=3001 flags=0 timestamp=1780093600715236401
+id=2    ledger=1 code=2 debits_posted=200    credits_posted=500    debits_pending=0      credits_pending=0      user_data_128=1002 user_data_64=2002 user_data_32=3002 flags=0 timestamp=1780093600715236402
+id=3    ledger=1 code=1 debits_posted=100    credits_posted=200    debits_pending=0      credits_pending=0      user_data_128=1003 user_data_64=2003 user_data_32=3003 flags=0 timestamp=1780093600715236403
+
+Timestamps match data.txt output, confirming records are identical between TigerBeetle and the tap output.

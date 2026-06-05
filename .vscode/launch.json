@@ -18,7 +18,7 @@
                 "catalog.json"
             ],
             "console": "integratedTerminal",
-            "python": "${workspaceFolder}/.venv/bin/python3"
+            "python": "${command:python.interpreterPath}"
         },
         {
             "name": "tap-tigerbeetle get",
@@ -36,7 +36,7 @@
                 "data.txt"
             ],
             "console": "integratedTerminal",
-            "python": "${workspaceFolder}/.venv/bin/python3"
+            "python": "${command:python.interpreterPath}"
         }
     ]
 }
