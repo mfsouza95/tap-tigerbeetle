@@ -40,7 +40,7 @@ class AccountsStream(TigerbeetleStream):
         ),
         th.Property(
             "user_data_128",
-            th.StringType
+            th.IntegerType
         ),
         th.Property(
             "user_data_64",
